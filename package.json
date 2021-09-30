@@ -1,0 +1,15 @@
+{
+  "name": "pdf.js-viewer",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Pacharapol Withayasakpunt <polv@polv.cc>",
+  "license": "MIT",
+  "scripts": {
+    "build": "rm -r dist && cd pdf.js && gulp generic && cp -r build/generic ../dist",
+    "dev": "http-server dist -o /web/viewer.html?file=/web/compressed.tracemonkey-pldi-09.pdf"
+  },
+  "dependencies": {
+    "gulp-cli": "^2.3.0",
+    "http-server": "^13.0.2"
+  }
+}
